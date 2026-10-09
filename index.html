@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -177,7 +178,14 @@ body.lock{overflow:hidden}
 .lay{display:block}
 .three{grid-template-columns:1fr}
 .shell{padding-inline:10px}
-}@media print{*{color:#000!important;backdrop-filter:none!important;box-shadow:none!important}
+}@media print{@page{size:A4;margin:12mm}
+*{color:#000!important;backdrop-filter:none!important;box-shadow:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+[contenteditable],[data-e]{outline:none!important}
+.pane+.pane{break-before:page}
+a.att,a.ath{text-decoration:none;color:inherit!important}
+.atf{margin:0;break-before:page}.atf figcaption{font-weight:700;margin-bottom:8px}
+.atf img{display:block;margin:8px auto;max-width:100%;max-height:245mm;object-fit:contain;break-inside:avoid}.atf img+img{break-before:page}
+#toast,#diag,.donebtn,.icp,#icp,#more,#emp,#pal,#bgp{display:none!important}
 #bg,.veil,.rail,.top,.profile,.invite,.bar,#pal,#bgp,.addbtn,.del,.rm{display:none!important}
 body{background:#fff}
 .pane{display:block!important;break-inside:avoid;margin-bottom:24px}
@@ -415,16 +423,16 @@ html[data-theme=light] .vh{color:#fff}
 <div id="bgp"><button data-bg="sky" style="background:linear-gradient(#2f55a4,#e8c4ae)"></button><button data-bg="sunset" style="background:linear-gradient(#1b1646,#ff8a4c)"></button><button data-bg="night" style="background:linear-gradient(#04050d,#2a1f55)"></button><button data-bg="forest" style="background:linear-gradient(#0a2f26,#8fd4aa)"></button><button data-bg="mono" style="background:linear-gradient(#0b0b10,#23232e)"></button><button class="tb" id="bgup">رفع صورة خلفية</button></div>
 <div id="more" class="gl">
  <button data-act="export"><svg class="i"><use href="#i-down"/></svg>تصدير نسخة احتياطية</button>
- <button data-act="send"><svg class="i"><use href="#i-share"/></svg>إرسال الملف للمشرف</button>
  <button data-act="empcopy"><svg class="i"><use href="#i-users"/></svg>إنشاء نسخة لموظف</button>
  <button data-act="review"><svg class="i"><use href="#i-book"/></svg>مراجعة ملف موظف (قراءة فقط)</button>
  <button data-act="import"><svg class="i"><use href="#i-up"/></svg>استيراد نسخة</button>
- <button data-act="print"><svg class="i"><use href="#i-print"/></svg>طباعة</button>
+ <button data-act="print"><svg class="i"><use href="#i-print"/></svg>حفظ PDF (للقراءة فقط)</button>
  <button data-act="discard"><svg class="i"><use href="#i-reset"/></svg>تجاهل التعديلات غير المنشورة</button>
  <button data-act="clear"><svg class="i"><use href="#i-trash"/></svg>مسح كل شيء</button>
 </div>
 <div id="icp" class="gl"><div class="icg"><button data-ico="star"><svg class="i"><use href="#i-star"/></svg></button><button data-ico="heart"><svg class="i"><use href="#i-heart"/></svg></button><button data-ico="book"><svg class="i"><use href="#i-book"/></svg></button><button data-ico="user"><svg class="i"><use href="#i-user"/></svg></button><button data-ico="users"><svg class="i"><use href="#i-users"/></svg></button><button data-ico="clock"><svg class="i"><use href="#i-clock"/></svg></button><button data-ico="calendar"><svg class="i"><use href="#i-calendar"/></svg></button><button data-ico="award"><svg class="i"><use href="#i-award"/></svg></button><button data-ico="target"><svg class="i"><use href="#i-target"/></svg></button><button data-ico="chart"><svg class="i"><use href="#i-chart"/></svg></button><button data-ico="image"><svg class="i"><use href="#i-image"/></svg></button><button data-ico="folder"><svg class="i"><use href="#i-folder"/></svg></button><button data-ico="mail"><svg class="i"><use href="#i-mail"/></svg></button><button data-ico="phone"><svg class="i"><use href="#i-phone"/></svg></button><button data-ico="home"><svg class="i"><use href="#i-home"/></svg></button><button data-ico="share"><svg class="i"><use href="#i-share"/></svg></button><button data-ico="bell"><svg class="i"><use href="#i-bell"/></svg></button><button data-ico="link"><svg class="i"><use href="#i-link"/></svg></button><button data-ico="globe"><svg class="i"><use href="#i-globe"/></svg></button><button data-ico="pin"><svg class="i"><use href="#i-pin"/></svg></button><button data-ico="chat"><svg class="i"><use href="#i-chat"/></svg></button><button data-ico="bulb"><svg class="i"><use href="#i-bulb"/></svg></button><button data-ico="flag"><svg class="i"><use href="#i-flag"/></svg></button><button data-ico="shield"><svg class="i"><use href="#i-shield"/></svg></button><button data-ico="cap"><svg class="i"><use href="#i-cap"/></svg></button><button data-ico="laptop"><svg class="i"><use href="#i-laptop"/></svg></button><button data-ico="video"><svg class="i"><use href="#i-video"/></svg></button><button data-ico="check"><svg class="i"><use href="#i-check"/></svg></button></div><div class="icf"><select id="icto"><option value="">بدون وجهة</option><option value="home">الرئيسية</option><option value="axes">المحاور</option><option value="evidence">الشواهد</option><option value="files">الملفات</option><option value="courses">الدورات</option><option value="contact">التواصل</option></select><input id="icurl" dir="ltr" placeholder="أو رابط https://..."></div><div class="icb"><button class="tb" id="icdel">حذف</button><button class="tb" id="icok">تم</button></div></div>
-<div id="emp" class="gl"><b>نسخة جديدة لموظف</b><input id="empn" placeholder="اسم الموظف"><input id="empo" placeholder="اسمك كصاحب الملف (يظهر كحقوق ملكية)"><input id="empp" type="password" placeholder="كلمة مرور الملف (6+ أحرف)"><small class="hint">سجل النسخ:</small><div id="empl" class="hint"></div><button class="tb" id="empgo">إنشاء ملف مشفّر وتنزيله</button></div>
+<div id="emp" class="gl"><b>نسخة جديدة لموظف</b><input id="empn" placeholder="اسم الموظف"><input id="empo" placeholder="اسمك كصاحب الملف (يظهر كحقوق ملكية)"><input id="empp" type="password" placeholder="كلمة مرور الملف (6+ أحرف)"><small class="hint">سجل النسخ:</small><div id="empl" class="hint"></div><button class="tb" id="ownseal" title="يحفظ صفحتك أنت كاملة بكلمة مرور المالك، لنشرها على GitHub">حفظ نسختي الأصلية المحمية</button>
+<button class="tb" id="empgo">إنشاء ملف مشفّر وتنزيله</button></div>
 <div id="revbar" class="gl">ملف: <b id="revn"></b> (قراءة فقط) <button class="tb" id="revx">إغلاق المراجعة</button></div>
 <div id="toast"></div>
 <div id="vw"><div class="vbox"><div class="vh"><b id="vn"></b><span><button class="tb" id="vd">تنزيل</button> <button class="tb" id="vo">فتح</button> <button class="tb" id="vx">إغلاق</button></span></div><div id="vc"></div></div></div>
@@ -553,11 +561,46 @@ function tick0() {   // الساعة واليوم والتاريخ (ميلادي
   set('ckH', hj.resolvedOptions().calendar === 'islamic-umalqura' ? hj.format(d).replace(/\s*هـ$/, '') + ' هـ' : '');
 }
 const slot = (p, cls = '', ph = 'image') => { const v = get(p); return `<div class="slot ${cls}${v ? ' has' : ''}" data-img="${p}">${v ? `<img src="${v}" alt="">` : `<span>${ICON(ph)}</span>`}${v ? `<button class="rm" data-rmi="${p}">×</button>` : ''}</div>`; };
+/* ---- المرفقات داخل ملف الـ PDF: كل مرفق يُلحق بصفحة، والأيقونات تصير روابط داخلية له ---- */
+const AID = new WeakMap(); let AIDN = 0, PDFPAGES = {};
+const aid = a => a.id || AID.get(a) || (AID.set(a, 'a' + ++AIDN), AID.get(a));
+function allAtts() {   // كل المرفقات في الملف (حتى داخل المجلدات) مع اسم صاحبها
+  const out = [];
+  (function w(o, lab) {
+    if (Array.isArray(o)) return o.forEach(x => w(x, lab));
+    if (!o || typeof o !== 'object') return;
+    if (o.data && o.type && o.name) return out.push({ a: o, lab });
+    const l = typeof (o.title || o.name) === 'string' ? (o.title || o.name) : lab;
+    for (const k in o) w(o[k], l);
+  })(state, '');
+  return out;
+}
+function appendix() {
+  const L = allAtts(); if (!L.length) return '';
+  return `<section class="pane attp"><h2>المرفقات والشواهد</h2><p class="sub">اضغط على أي مرفق في الصفحات السابقة ليفتح هنا</p>${L.map(({ a, lab }, n) => `<figure class="atf" id="att-${aid(a)}"><figcaption>${n + 1}. ${esc(a.name)}${lab ? ' — ' + esc(lab) : ''}</figcaption>${isImg(a) ? `<img src="${a.data}" alt="">` : (PDFPAGES[aid(a)] ? PDFPAGES[aid(a)].map(u => `<img src="${u}" alt="">`).join('') : '<p>تعذّر عرض صفحات هذا الملف (يلزم اتصال بالإنترنت وقت الحفظ).</p>')}</figure>`).join('')}</section>`;
+}
+async function loadPdfPages() {   // يحوّل صفحات ملفات PDF المرفقة إلى صور لتُدمج في الـ PDF النهائي
+  PDFPAGES = {}; const L = allAtts().filter(({ a }) => !isImg(a)); if (!L.length) return;
+  try {
+    if (!window.pdfjsLib) await new Promise((ok, no) => { const sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js'; sc.onload = ok; sc.onerror = no; document.head.appendChild(sc); setTimeout(no, 15000); });
+    pdfjsLib.GlobalWorkerOptions.workerSrc = URL.createObjectURL(new Blob(['importScripts("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js")'], { type: 'text/javascript' }));
+    for (const { a } of L) {
+      try {
+        const pdf = await pdfjsLib.getDocument({ data: atob(a.data.split(',')[1]) }).promise, pages = [];
+        for (let i = 1; i <= Math.min(pdf.numPages, 40); i++) {
+          const pg = await pdf.getPage(i), vp = pg.getViewport({ scale: 1.6 }), c = document.createElement('canvas');
+          c.width = vp.width; c.height = vp.height; await pg.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise; pages.push(c.toDataURL('image/jpeg', .82));
+        }
+        PDFPAGES[aid(a)] = pages;
+      } catch (e) {}
+    }
+  } catch (e) {}
+}
 function atts(p, mode = 'chips') {   // قائمة مرفقات (صور / PDF / شهادات) على مسار p
   const arr = get(p) || [];
   const items = arr.map((a, i) => mode === 'grid'
-    ? `<div class="ath" data-view="${p}.${i}">${isImg(a) ? `<img src="${a.data}" alt="">` : ICON('book') + `<small>${esc(a.name)}</small>`}<button class="del" data-del="${p}.${i}">×</button></div>`
-    : `<div class="att" data-view="${p}.${i}">${ICON(isImg(a) ? 'image' : 'book')}<span>${esc(a.name)}</span><button class="x" data-del="${p}.${i}">×</button></div>`).join('');
+    ? (ui.all ? `<a class="ath" href="#att-${aid(a)}">${isImg(a) ? `<img src="${a.data}" alt="">` : ICON('book') + `<small>${esc(a.name)}</small>`}</a>` : `<div class="ath" data-view="${p}.${i}">${isImg(a) ? `<img src="${a.data}" alt="">` : ICON('book') + `<small>${esc(a.name)}</small>`}<button class="del" data-del="${p}.${i}">×</button></div>`)
+    : ui.all ? `<a class="att" href="#att-${aid(a)}">${ICON(isImg(a) ? 'image' : 'book')}<span>${esc(a.name)}</span></a>` : `<div class="att" data-view="${p}.${i}">${ICON(isImg(a) ? 'image' : 'book')}<span>${esc(a.name)}</span><button class="x" data-del="${p}.${i}">×</button></div>`).join('');
   return `<div class="${mode === 'grid' ? 'agrid' : 'achips'}">${items}${ed ? `<button class="addbtn" data-up="${p}">${ICON('plus')}إرفاق صورة / PDF</button>` : ''}</div>`;
 }
 const avg = () => Math.round(state.axes.reduce((s, a) => s + (+a.pct || 0), 0) / (state.axes.length || 1));
@@ -619,17 +662,19 @@ function sheet(f, i) {
 }
 const NAV = [['home', 'الرئيسية'], ['axes', 'المحاور'], ['files', 'الملفات'], ['courses', 'الدورات'], ['contact', 'التواصل']];
 const RAIL = [['home', 'home'], ['axes', 'target'], ['evidence', 'image'], ['files', 'folder'], ['courses', 'award']];
-const waHref = () => state.wa ? 'https://wa.me/' + state.wa : '#';
-const creditHTML = () => (state.mode === 'employee' ? esc(state.credit || '') : E('t.credit', 'تصميم وتطوير: ........ • جميع الحقوق محفوظة', 'small'))
-  + `<a class="wa" href="${waHref()}" target="_blank" rel="noopener" title="تواصل مع صاحب الملف عبر واتساب" ${state.wa ? '' : 'hidden'}>A</a>`
-  + (ed && state.mode !== 'employee' ? `<div class="wanum"><small>رقم واتساب لحرف A (مع رمز الدولة):</small><input id="wain" dir="ltr" inputmode="numeric" placeholder="9665XXXXXXXX" value="${esc(state.wa || '')}"></div>` : '');
+const OWNER_MAIL = 'aishah.n.00@hotmail.com';   // بريد صاحب الحقوق (يفتحه حرف A)
+const mailOf = () => state.mail === undefined ? OWNER_MAIL : state.mail;
+const waHref = () => mailOf() ? 'mailto:' + mailOf() + '?subject=' + encodeURIComponent('بخصوص ملف الأداء الوظيفي') : state.wa ? 'https://wa.me/' + state.wa : '#';
+const creditHTML = () => (state.mode === 'employee' ? esc(state.credit || '') : E('t.credit', 'تصميم وتطوير: • جميع الحقوق محفوظة', 'small'))
+  + `<a class="wa" href="${waHref()}" target="_blank" rel="noopener" title="تواصل مع صاحب الملف" ${mailOf() || state.wa ? '' : 'hidden'}>A</a>`
+  + (ed && state.mode !== 'employee' ? `<div class="wanum"><small>بريد حرف A:</small><input id="mlin" dir="ltr" type="email" placeholder="name@example.com" value="${esc(mailOf())}"></div><div class="wanum"><small>رقم واتساب لحرف A (مع رمز الدولة):</small><input id="wain" dir="ltr" inputmode="numeric" placeholder="9665XXXXXXXX" value="${esc(state.wa || '')}"></div>` : '');
 const TOOLS = [['tg', 'edit', 'تعديل'], ['bgb', 'layers', 'تغيير الخلفية'], ['th', 'palette', 'لون الأزرار'], ['tm', 'auto', 'الوضع'], ['pub', 'cloud', 'حفظ ونشر'], ['mo', 'more', 'المزيد']];
 const themeIcon = () => theme === 'auto' ? 'auto' : isDark() ? 'moon' : 'sun';
 const shell = () => `${ed ? '<button class="donebtn" data-t="tg">تم</button>' : ''}<header class="top">${slot('img.logo', 'round')}
   <nav class="pill gl">${NAV.map(([k, l]) => `<button class="nav${ui.tab === k ? ' on' : ''}" data-go="${k}">${l}</button>`).join('')}</nav>
   <div class="tools"><button class="rbtn" data-go="evidence">${ICON('image')}</button><button class="rbtn" data-go="contact">${ICON('mail')}</button></div></header>
  <div class="lay"><aside class="rail gl">${RAIL.map(([k, i]) => `<button class="nav${ui.tab === k ? ' on' : ''}" data-go="${k}">${ICON(i)}</button>`).join('')}<span class="sep"></span>${TOOLS.filter(([t]) => !(t === 'pub' && state.mode === 'employee')).map(([t, i, l]) => `<button class="nav tl${t === 'tg' && ed ? ' on' : ''}" data-t="${t}" title="${l}">${ICON(t === 'tm' ? themeIcon() : i)}</button>`).join('')}</aside>
- <main class="main">${ui.all ? Object.values(PANES).map(f => `<section class="pane on">${f()}</section>`).join('') : `<section class="pane on">${PANES[ui.tab]()}</section>`}<div class="credit">${creditHTML()}</div></main></div>
+ <main class="main">${ui.all ? Object.values(PANES).map(f => `<section class="pane on">${f()}</section>`).join('') + appendix() : `<section class="pane on">${PANES[ui.tab]()}</section>`}<div class="credit">${creditHTML()}</div></main></div>
  <div class="gl profile"><span class="rbtn" style="width:38px;height:38px">${ICON('user')}</span><div>${E('t.name', 'اسم المعلم', 'b')}${E('t.pr', 'معلم • عضو متميز', 'small')}</div></div>
  <div class="gl invite"><div>${E('t.inv', 'شارك ملفك', 'b')}${E('t.invs', 'انشر ثم شارك الرابط', 'small')}</div><button class="rbtn" data-act="share">${ICON('share')}</button></div>`;
 function render() {
@@ -693,9 +738,10 @@ document.addEventListener('click', e => {
 document.addEventListener('input', e => {
   const t = e.target, p = t.dataset.p;
   if (p) { set(p, t.textContent); $$(`[data-p="${p}"]`).forEach(o => { if (o !== t) o.textContent = t.textContent; }); dirty(); }
+  else if (t.id === 'mlin') { state.mail = t.value.trim(); const a = $('.credit .wa'); if (a) { a.hidden = !(state.mail || state.wa); a.href = waHref(); } dirty(); }
   else if (t.id === 'wain') {   // رقم الواتساب: أرقام فقط، و05xxxxxxxx تتحول تلقائيًا إلى 9665xxxxxxxx
     let v = t.value.replace(/\D/g, '').replace(/^00/, ''); if (/^05\d{8}$/.test(v)) v = '966' + v.slice(1); if (t.value !== v) t.value = v;
-    state.wa = v; const a = $('.credit .wa'); if (a) { a.hidden = !v; a.href = v ? 'https://wa.me/' + v : '#'; } dirty();
+    state.wa = v; const a = $('.credit .wa'); if (a) { a.hidden = !(v || mailOf()); a.href = waHref(); } dirty();
   }
   else if (t.dataset.rng !== undefined) { state.axes[+t.dataset.rng].pct = +t.value; syncAxis(+t.dataset.rng); dirty(); }
 });
@@ -724,7 +770,17 @@ async function act(a) {
   else if (a === 'empcopy') { renderIssued(); $('#emp').classList.add('on'); $('#empn').focus(); }
   else if (a === 'review') $('#revf').click();
   else if (a === 'import') $('#imp').click();
-  else if (a === 'print') { ui.all = true; render(); setTimeout(() => { window.print(); ui.all = false; render(); }, 250); }
+  else if (a === 'print') {   // PDF للقراءة فقط: كل الأقسام بصفحات مرتبة، بدون أي أزرار تعديل
+    const oldT = document.title, wasEd = ed;
+    ed = false; ui.all = true; ui.folder = null; render();
+    document.title = 'ملف-الأداء-' + safe(state.t?.name || 'معلم');   // اسم ملف الـ PDF المقترح
+    toast('جارٍ تجهيز المرفقات داخل الـ PDF…');
+    await loadPdfPages(); render();
+    toast('اختر «حفظ كـ PDF» من نافذة الطباعة');
+    const back = () => { document.title = oldT; ui.all = false; ed = wasEd; render(); removeEventListener('afterprint', back); };
+    addEventListener('afterprint', back);
+    setTimeout(() => window.print(), 400);
+  }
   else if (a === 'discard') { const u = snap(); state = norm(EMB); applyLook(); render(); idb('put', DK, null); document.body.classList.remove('dirty'); toast('رجعت لآخر نسخة منشورة', u); }
   else if (a === 'clear') { const u = snap(); state = seed(); dirty(); applyLook(); render(); toast('تم المسح', u); }
   else if (a === 'share') { try { await navigator.clipboard.writeText(location.href); } catch (e) {} toast('انشر ملفك بزر السحابة ثم شارك رابطه من زر المشاركة في Claude'); }
@@ -741,9 +797,9 @@ function tool(t) {   // أزرار الشريط الجانبي (وشريط ال�
 const LOADER = `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ملف محمي</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(160deg,#0b1a45,#050a1f);color:#fff;font-family:system-ui,Tahoma,sans-serif}form{width:min(340px,92%);padding:24px;border-radius:24px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);display:grid;gap:12px;text-align:center}input,button{font:inherit;padding:12px;border-radius:14px;border:0}input{background:rgba(255,255,255,.15);color:#fff}button{background:#2f6bff;color:#fff;font-weight:700;cursor:pointer}#e{color:#ffb4b4;min-height:1.2em;font-size:14px}</style></head><body><form id="f"><b>🔒 ملف محمي</b><small>أدخل كلمة المرور التي أعطاك إياها صاحب الملف</small><input id="p" type="password" placeholder="كلمة المرور"><button>فتح</button><div id="e"></div></form><script id="payload" type="application/json">__P__<\/script><script>
 const P=JSON.parse(document.getElementById('payload').textContent),b=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 document.getElementById('f').onsubmit=async e=>{e.preventDefault();const E=document.getElementById('e');E.textContent='...';
-try{const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(document.getElementById('p').value),'PBKDF2',false,['deriveKey']),
-key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(P.s),iterations:200000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']),
-t=await crypto.subtle.decrypt({name:'AES-GCM',iv:b(P.i)},key,b(P.d));const h=new TextDecoder().decode(t);document.open();document.write(h);document.close()}
+try{const raw=document.getElementById('p').value,N=function(v){return v.normalize('NFKC').replace(/[\\u0660-\\u0669]/g,function(d){return d.charCodeAt(0)-1632}).replace(/[\\u06F0-\\u06F9]/g,function(d){return d.charCodeAt(0)-1776}).trim()},C=raw===N(raw)?[raw]:[raw,N(raw)];let t=null,er=null;
+for(const pw of C){try{const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']),key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b(P.s),iterations:200000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);t=await crypto.subtle.decrypt({name:'AES-GCM',iv:b(P.i)},key,b(P.d));break}catch(q){er=q}}
+if(!t)throw er;const h=new TextDecoder().decode(t);document.open();document.write(h);document.close()}
 catch(x){E.textContent=(window.crypto&&crypto.subtle)?(x&&x.name==='OperationError'?'كلمة المرور غير صحيحة':'تعذّر الفتح: '+((x&&x.message)||x)):'هذا المتصفح لا يدعم فتح الملف المشفّر هنا. افتحه من Chrome على حاسوب أو من رابط https'}};
 if(!(window.crypto&&crypto.subtle))document.getElementById('e').textContent='تنبيه: هذا المتصفح قد لا يدعم فتح الملف المشفّر. جرّب Chrome على حاسوب أو رابط https';
 <\/script></body></html>`;
@@ -756,19 +812,28 @@ async function seal(html, pw) {   // تشفير الملف كاملًا (AES-256
   return LOADER.replace('__P__', () => JSON.stringify({ s: b64(salt), i: b64(iv), d: b64(d) }));
 }
 /*SEAL-END*/
+const normPw = v => v.normalize('NFKC').replace(/[\u0660-\u0669]/g, d => d.charCodeAt(0) - 1632).replace(/[\u06F0-\u06F9]/g, d => d.charCodeAt(0) - 1776).trim();   // أرقام عربية→لاتينية + حذف المسافات الطرفية
 const safe = n => String(n).replace(/[^\w\u0600-\u06FF]+/g, '-').replace(/^-|-$/g, '') || 'employee';
 $('#empgo').onclick = async () => {   // ينشئ ملفًا مستقلًّا ومشفّرًا لموظف: يعمل بدون Claude ولا يُفتح إلا بكلمة المرور
-  const n = $('#empn').value.trim(), pw = $('#empp').value, ow = $('#empo').value.trim();
+  const n = $('#empn').value.trim(), pw = normPw($('#empp').value), ow = $('#empo').value.trim();
   if (!n) return toast('اكتب اسم الموظف'); if (pw.length < 6) return toast('كلمة المرور 6 أحرف على الأقل');
   if (!window.crypto?.subtle) { $('#emp').classList.remove('on'); return toast('التشفير يحتاج متصفحًا آمنًا (https). افتح رابط الصفحة من Safari أو Chrome خارج تطبيق Claude ثم أعد المحاولة'); }
   const st = seed(), fid = uid(), date = new Date().toISOString().slice(0, 10);
-  Object.assign(st, { mode: 'employee', owner: ow, wa: state.wa || '', fid, ac: state.ac, bg: state.bg, bgTone: state.bgTone, credit: `تصميم وتطوير: ${ow || '—'} • رقم النسخة ${fid} • ${date} • جميع الحقوق محفوظة` }); st.t.name = n;
+  Object.assign(st, { mode: 'employee', owner: ow, wa: state.wa || '', mail: mailOf(), fid, ac: state.ac, bg: state.bg, bgTone: state.bgTone, credit: `تصميم وتطوير: ${ow || '—'} • رقم النسخة ${fid} • ${date} • جميع الحقوق محفوظة` }); st.t.name = n;
   toast('جارٍ التشفير…'); const html = await seal(buildDoc(st), pw);
   if (html.length > 15.5e6) return toast('الحجم كبير، استخدم خلفية جاهزة');
   if (await saveFile('teacher-' + safe(n) + '.html', html)) {
     (state.issued ??= []).push({ id: fid, name: n, date }); dirty(); renderIssued();
     $('#empn').value = ''; $('#empp').value = ''; $('#emp').classList.remove('on'); toast('تم إنشاء نسخة ' + n + ' — أرسل الملف له وأعطه كلمة المرور على حدة');
   }
+};
+$('#ownseal').onclick = async () => {   // يشفّر صفحة المالك نفسها: لا يفتحها أو يعدّلها أو ينشئ منها نسخًا إلا من يعرف كلمة مرورك
+  if (state.mode === 'employee') return;
+  const pw = normPw($('#empp').value); if (pw.length < 8) return toast('كلمة مرور المالك 8 أحرف على الأقل');
+  if (!window.crypto?.subtle) return toast('التشفير يحتاج متصفحًا آمنًا (https)');
+  toast('جارٍ التشفير…'); const html = await seal(buildDoc(state), pw);
+  if (html.length > 15.5e6) return toast('الحجم كبير، احذف بعض المرفقات');
+  if (await saveFile('my-portfolio-locked.html', html)) { $('#empp').value = ''; $('#emp').classList.remove('on'); toast('تم الحفظ — ارفع هذا الملف على GitHub بدل الصفحة المفتوحة'); }
 };
 function renderIssued() { const l = (state.issued || []).slice().reverse(); $('#empl').innerHTML = `<b>عدد النسخ: ${l.length}</b>` + l.map(x => `<div>${esc(x.name)} • ${esc(x.id)} • ${esc(x.date)}</div>`).join(''); }
 $('#revf').onchange = async e => {   // مراجعة ملف موظف (قراءة فقط) دون المساس ببياناتك
@@ -871,6 +936,7 @@ window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener?.('change',
 /* ---------- 8) التشغيل ---------- */
 let EMB = {}; try { EMB = JSON.parse($('#state').textContent || '{}'); } catch (e) {}
 (async () => {
+  try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch (e) {}   // يطلب من المتصفح عدم حذف مسودتك تلقائيًا
   DK = EMB.fid ? 'draft:' + EMB.fid : 'draft';
   const dr = await idb('get', DK), useDraft = dr?.state && dr.state.savedAt > (EMB.savedAt || 0);
   state = norm(useDraft ? dr.state : EMB);
@@ -884,3 +950,5 @@ let EMB = {}; try { EMB = JSON.parse($('#state').textContent || '{}'); } catch (
 </script>
 </body>
 </html>
+
+</body></html>
